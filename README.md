@@ -42,15 +42,15 @@ The extraction process follows four main stages:
 PDF Document
      |
      v
-[1] PDF to Images ──────────┐
-     |                      │
-     v                      │
+[1] PDF to Images ─────────┐
+     |                     │
+     v                     │
 [2] Table Detection        │
-     |                      │
-     v                      │
+     |                     │
+     v                     │
 [3] Table Extraction       │ ── Memory Management
-     |                      │   - Page-by-page processing
-     v                      │   - Garbage collection
+     |                     │   - Page-by-page processing
+     v                     │   - Garbage collection
 [4] CSV Export & Logging ──┘   - Temporary file cleanup
      |
      v
