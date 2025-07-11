@@ -1,0 +1,26 @@
+# Python dependencies for PDF Table Extraction System
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+opencv-python>=4.12.0
+pandas>=2.3.0
+pdf2image>=1.17.0
+huggingface-hub>=0.33.0
+camelot-py[cv]>=1.0.0
+numpy>=2.2.0
+pillow>=11.0.0
+
+# DocLayout-YOLO (will be installed from GitHub)
+# Note: This will be automatically installed via git+https://github.com/opendatalab/DocLayout-YOLO.git
+doclayout-yolo
+
+# Additional dependencies that may be needed
+# (these are typically installed as dependencies of the above packages)
+# opencv-python-headless>=4.12.0  # Included with opencv-python
+# matplotlib>=3.5.0  # For plotting if needed
+# scipy>=1.9.0  # For scientific computing if needed
+
+# System dependencies (install separately):
+# Ubuntu/Debian: sudo apt install poppler-utils
+# macOS: brew install poppler
+# Windows: Download from https://poppler.freedesktop.org/ 
