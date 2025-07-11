@@ -10,58 +10,58 @@ def test_imports():
     
     try:
         import camelot
-        print("✓ camelot imported successfully")
+        print(" Camelot imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import camelot: {e}")
+        print(f" Failed to import camelot: {e}")
         return False
     
     try:
         import cv2
-        print("✓ opencv imported successfully")
+        print(" Opencv imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import opencv: {e}")
+        print(f" Failed to import opencv: {e}")
         return False
     
     try:
         import pandas
-        print("✓ pandas imported successfully")
+        print(" Pandas imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import pandas: {e}")
+        print(f" Failed to import pandas: {e}")
         return False
     
     try:
         from pdf2image import convert_from_path
-        print("✓ pdf2image imported successfully")
+        print(" pdf2image imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import pdf2image: {e}")
+        print(f" Failed to import pdf2image: {e}")
         return False
     
     try:
         from huggingface_hub import hf_hub_download
-        print("✓ huggingface_hub imported successfully")
+        print(" huggingface_hub imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import huggingface_hub: {e}")
+        print(f" Failed to import huggingface_hub: {e}")
         return False
     
     try:
         from PIL import Image
-        print("✓ PIL imported successfully")
+        print(" PIL imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import PIL: {e}")
+        print(f" Failed to import PIL: {e}")
         return False
     
     try:
         import numpy
-        print("✓ numpy imported successfully")
+        print(" numpy imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import numpy: {e}")
+        print(f" Failed to import numpy: {e}")
         return False
     
     try:
         from doclayout_yolo import YOLOv10
-        print("✓ doclayout_yolo imported successfully")
+        print(" doclayout_yolo imported successfully")
     except ImportError as e:
-        print(f"✗ Failed to import doclayout_yolo: {e}")
+        print(f" Failed to import doclayout_yolo: {e}")
         return False
     
     return True
@@ -72,14 +72,14 @@ def test_extractor_initialization():
     
     try:
         from pdf_table_extractor import PDFTableExtractor
-        print("✓ PDFTableExtractor imported successfully")
+        print(" PDFTableExtractor imported successfully")
         
         extractor = PDFTableExtractor(confidence_threshold=0.2)
-        print("✓ PDFTableExtractor initialized successfully")
+        print(" PDFTableExtractor initialized successfully")
         return True
         
     except Exception as e:
-        print(f"✗ Failed to initialize PDFTableExtractor: {e}")
+        print(f" Failed to initialize PDFTableExtractor: {e}")
         return False
 
 def test_camelot_functionality():
@@ -91,14 +91,14 @@ def test_camelot_functionality():
         
         # Check if read_pdf function exists
         if hasattr(camelot, 'read_pdf'):
-            print("✓ camelot.read_pdf function is available")
+            print(" camelot.read_pdf function is available")
             return True
         else:
-            print("✗ camelot.read_pdf function not found")
+            print(" camelot.read_pdf function not found")
             return False
             
     except Exception as e:
-        print(f"✗ Error testing camelot functionality: {e}")
+        print(f" Error testing camelot functionality: {e}")
         return False
 
 def main():
@@ -124,10 +124,10 @@ def main():
     # Final result
     print("\n" + "="*60)
     if all_tests_passed:
-        print("🎉 ALL TESTS PASSED! System is ready for use.")
+        print("ALL TESTS PASSED! System is ready for use.")
         print("You can now run: python pdf_table_extractor.py")
     else:
-        print("❌ SOME TESTS FAILED! Please check the errors above.")
+        print("SOME TESTS FAILED! Please check the errors above.")
         print("Refer to the README for installation instructions.")
     print("="*60)
 
