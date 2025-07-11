@@ -4,7 +4,7 @@ A simple system for extracting tables from PDF documents using [DocLayout-YOLO](
 
 ## Overview
 
-This system processes PDF documents to automatically detect tables and extract their content into CSV files with comprehensive logging and metadata tracking.
+This system processes PDF documents to automatically detect tables and extract their content into "CSV" files with comprehensive logging and metadata tracking.
 
 ## Installation
 
