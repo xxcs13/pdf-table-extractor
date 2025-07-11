@@ -1,6 +1,6 @@
 # PDF Table Extraction System
 
-A professional system for extracting tables from PDF documents using [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO/tree/main) for detection and Camelot for content extraction.
+A system for extracting tables from PDF documents using [DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO/tree/main) for detection and Camelot for content extraction.
 
 ## Overview
 
